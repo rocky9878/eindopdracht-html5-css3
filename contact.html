@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contactStyle.css">
+    <script src="javascript/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/warthunderLogo.png" alt="War Thunder Logo"></a>
+        <nav>
+            <a href="index.html">home</a>
+            <!-- dropdown menu   -->
+            <div class="dropdown">
+                <button onclick="dropdown()" class="dropbtn">gamemodes</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="airGameModes.html">air gamemodes</a>
+                    <a href="groundGameModes.html">ground gamemodes</a>
+                    <a href="navalGameModes.html">naval gamemodes</a>
+                </div>
+            </div>
+            <a href="contact.html" class="active">contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="map"></section>
+        <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+            <div>
+                <label>naam: </label><br><input type="text" name="naam" required placeholder="uw naam"><br>
+                <label>e-mail: </label><br><input type="email" name="e-mail" required
+                    placeholder="voorbeeld@email.com"><br>
+                <label>telefoon nummer: </label><br><input type="tel" name="tel" placeholder="06-12345678"><br>
+                <label>uw opmerking: </label><br><textarea name="opmerking"></textarea><br>
+                <input type="submit">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>contact: </p>
+        <a href="mailto:johnDoe@email.com">
+            <p>email: johnDoe@email.com</p>
+        </a>
+        <a href="tel:123-456-7890">
+            <p>tel: 123-456-7890</p>
+
+        </a>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDakC7Zk7im3TNk_B1lnlthKsUHQYAySDs&callback=getLocation"></script>
+    </footer>
+</body>
+
+</html>

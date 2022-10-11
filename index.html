@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>war thunder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/script.js" async defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/warthunderLogo.png" alt="War Thunder Logo"></a>
+        <nav>
+            <a href="index.html" class="active">home</a>
+            <!-- dropdown menu   -->
+            <div class="dropdown">
+                <button onclick="dropdown()" class="dropbtn">gamemodes</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="airGameModes.html">air gamemodes</a>
+                    <a href="groundGameModes.html">ground gamemodes</a>
+                    <a href="navalGameModes.html">naval gamemodes</a>
+                </div>
+            </div>
+            <a href="contact.html">contact</a>
+        </nav> 
+    </header>
+    <main>
+        <img src="img/bannerImg.jpg" alt="warthunder Banner">
+        <section class="flex">
+            <div class="container">
+                <h2>wat is war thunder?</h2>
+                <p>War Thunder is een free to play multiplayer-videogame voor voertuigen, ontwikkeld en uitgegeven door
+                    Gaijin Entertainment. Aangekondigd in 2011, werd het voor het eerst uitgebracht in november 2012 als
+                    een
+                    open beta met een wereldwijde release in januari 2013; het had zijn officiële release op 21 december
+                    2016.</p>
+            </div>
+            <div class="container">
+                <h2>wat is er te vinden in war thunder?</h2>
+                <p>
+                    War Thunder is gebaseerd op gecombineerde wapengevechten in de lucht, op het land en op zee.
+                    Spelers kunnen vliegtuigen, grondvoertuigen en oorlogsschepen besturen uit de Verenigde Staten,
+                    Duitsland, Rusland, Groot-Brittannië, Frankrijk en Japan, evenals landen met kleinere legers of
+                    minder
+                    prominente plaatsen in conflicten, zoals Italië, China, Zweden en Israël.</p>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2>Foto's en videos</h2>
+            <img src="img/apache-helicopter.png" alt="apache helicopter">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XIXcG84Ql9A?controls=0"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+                allowfullscreen></iframe>
+            <img src="img/spitfire.png" alt="spitfire vliegtuig">
+            <video controls muted>
+                <source src="videos/anti-tank-missile.mp4" type="video/mp4">
+                <source src="videos/anti-tank-missile.ogg" type="video/ogg">
+            </video>
+            <img src="img/m1-abrams.png" alt="abrams MBT">
+        </section>
+        <hr>
+        <section class="flex">
+            <h2 class="hidden">page select</h2>
+            <figure>
+                <img src="img/F3F-2.png" alt="biplane">
+                <img src="img/corsair.png" alt="propeller plane">
+                <img src="img/F2H-2-Banshee.png" alt="early jet fighter">
+                <img src="img/F-14.png" alt="F-14 Tomcat">
+                <a href="airGameModes.html">
+                    <p>air gamemodes</p>
+                </a>
+            </figure>
+
+            <figure>
+                <img src="img/panzer3-B.png" alt="vroeg ww2 tank">
+                <img src="img/Tiger-E.png" alt="ww2 tank">
+                <img src="img/Leopard-1.png" alt="koude oorlog tank">
+                <img src="img/leopard2A6.png" alt="moderne main battle tank">
+                <a href="groundGameModes.html">
+                    <p>ground gamemodes</p>
+                </a>
+            </figure>
+
+            <figure>
+                <img src="img/HMS-Cadiz.png" alt="destroyer">
+                <img src="img/HMS-Belfast.png" alt="cruiser">
+                <img src="img/HMS-Hood.png" alt="battlecruiser">
+                <img src="img/HMS-Marlborough.png" alt="battleship">
+                <a href="navalGameModes.html">
+                    <p>naval gamemodes</p>
+                </a>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>contact: </p>
+        <a href="mailto:johnDoe@email.com">
+            <p>email: johnDoe@email.com</p>
+        </a>
+        <a href="tel:123-456-7890">
+            <p>tel: 123-456-7890</p>
+        </a>
+    </footer>
+</body>
+
+</html>
